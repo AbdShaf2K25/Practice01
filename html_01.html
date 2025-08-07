@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sudoku Board #01</title>
+    </head>
+
+    <meta charset="UTF-8">
+
+    <body style="background-color:rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000);  padding: 0px; margin: 0px auto; text-align: center; <!--width:800px-->; border-collapse: collapse; font-family:Arial, sans-serif;">
+        <h1>Sudoku Board:</h1>
+        <br>
+
+        <table style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000);  padding: 0px; margin: 0px auto; text-align: center; width:800px; border-collapse: collapse;">
+            <tr>    
+                <th id="Hc0" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></th>
+                <th id="Hc1" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A</th>
+                <th id="Hc2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B</th>
+                <th id="Hc3" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C</th>
+                <th id="Hc4" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D</th>
+                <th id="Hc5" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E</th>
+                <th id="Hc6" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F</th>
+                <th id="Hc7" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G</th>
+                <th id="Hc8" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H</th>
+                <th id="Hc9" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I</th>
+            </tr>
+            <tr>
+                <th id="Hr1" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">1</th>
+                <td id="A1"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A1</td>
+                <td id="B1"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B1</td>
+                <td id="C1"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C1</td>
+                <td id="D1"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D1</td>
+                <td id="E1"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E1</td>
+                <td id="F1"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F1</td>
+                <td id="G1"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G1</td>
+                <td id="H1"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H1</td>
+                <td id="I1"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I1</td>
+            </tr>
+            <tr>
+                <th id="Hr2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">2</th>
+                <td id="A2"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A2</td>
+                <td id="B2"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B2</td>
+                <td id="C2"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C2</td>
+                <td id="D2"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D2</td>
+                <td id="E2"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E2</td>
+                <td id="F2"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F2</td>
+                <td id="G2"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G2</td>
+                <td id="H2"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H2</td>
+                <td id="I2"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I2</td>
+            </tr>
+            <tr>
+                <th id="Hr3" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">3</th>
+                <td id="A3"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A3</td>
+                <td id="B3"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B3</td>
+                <td id="C3"  style="background-color: rgba(086, 008, 122, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C3</td>
+                <td id="D3"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D3</td>
+                <td id="E3"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E3</td>
+                <td id="F3"  style="background-color: rgba(004, 094, 002, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F3</td>
+                <td id="G3"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G3</td>
+                <td id="H3"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H3</td>
+                <td id="I3"  style="background-color: rgba(120, 000, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I3</td>
+            </tr>
+            <tr>
+                <th id="Hr4" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">4</th>
+                <td id="A4"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A4</td>
+                <td id="B4"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B4</td>
+                <td id="C4"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C4</td>
+                <td id="D4"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D4</td>
+                <td id="E4"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E4</td>
+                <td id="F4"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F4</td>
+                <td id="G4"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G4</td>
+                <td id="H4"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H4</td>
+                <td id="I4"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I4</td>
+            </tr>
+            <tr>
+                <th id="Hr5" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">5</th>
+                <td id="A5"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A5</td>
+                <td id="B5"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B5</td>
+                <td id="C5"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C5</td>
+                <td id="D5"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D5</td>
+                <td id="E5"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E5</td>
+                <td id="F5"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F5</td>
+                <td id="G5"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G5</td>
+                <td id="H5"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H5</td>
+                <td id="I5"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I5</td>
+            </tr>
+            <tr>
+                <th id="Hr6" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">6</th>
+                <td id="A6"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A6</td>
+                <td id="B6"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B6</td>
+                <td id="C6"  style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C6</td>
+                <td id="D6"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D6</td>
+                <td id="E6"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E6</td>
+                <td id="F6"  style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F6</td>
+                <td id="G6"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G6</td>
+                <td id="H6"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H6</td>
+                <td id="I6"  style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I6</td>
+            </tr>
+            <tr>
+                <th id="Hr7" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">7</th>
+                <td id="A7"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A7</td>
+                <td id="B7"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B7</td>
+                <td id="C7"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C7</td>
+                <td id="D7"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D7</td>
+                <td id="E7"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E7</td>
+                <td id="F7"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F7</td>
+                <td id="G7"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G7</td>
+                <td id="H7"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H7</td>
+                <td id="I7"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I7</td>
+            </tr>
+            <tr>
+                <th id="Hr8" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">8</th>
+                <td id="A8"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A8</td>
+                <td id="B8"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B8</td>
+                <td id="C8"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C8</td>
+                <td id="D8"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D8</td>
+                <td id="E8"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E8</td>
+                <td id="F8"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F8</td>
+                <td id="G8"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G8</td>
+                <td id="H8"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H8</td>
+                <td id="I8"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I8</td>
+            </tr>
+            <tr>
+                <th id="Hr9" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">9</th>
+                <td id="A9"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">A9</td>
+                <td id="B9"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">B9</td>
+                <td id="C9"  style="background-color: rgba(013, 136, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">C9</td>
+                <td id="D9"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">D9</td>
+                <td id="E9"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">E9</td>
+                <td id="F9"  style="background-color: rgba(017, 179, 114, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">F9</td>
+                <td id="G9"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">G9</td>
+                <td id="H9"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">H9</td>
+                <td id="I9"  style="background-color: rgba(218, 095, 095, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">I9</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+        <table style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000);  padding: 0px; margin: 0px auto; text-align: center; width:800px; border-collapse: collapse;">
+            <tr>
+                <td id="C_Hr1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_A1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_B1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_C1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_D1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_E1" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">/\</td>
+                <td id="C_F1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_G1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_H1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_I1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td id="C_Hr2" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_A2" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_B2" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_C2" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_D2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"><</td>
+                <td id="C_E2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_F2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">></td>
+                <td id="C_G2" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_H2" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_I2" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td id="C_Hr3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_A3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_B3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_C3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_D3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_E3" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">\/</td>
+                <td id="C_F3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_G3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_H3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_I3" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td id="C_Hr4" style="background-color: rgba(000, 000, 000, 0.000); border: 2px <!--solid--> rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_A4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">1</td>
+                <td id="C_B4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">2</td>
+                <td id="C_C4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">3</td>
+                <td id="C_D4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">4</td>
+                <td id="C_E4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">5</td>
+                <td id="C_F4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">6</td>
+                <td id="C_G4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">7</td>
+                <td id="C_H4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">8</td>
+                <td id="C_I4" style="background-color: rgba(184, 123, 000, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">9</td>
+            </tr>
+            <!--
+            <tr>
+                <td style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(124, 028, 193, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(012, 160, 064, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td style="background-color: rgba(218, 015, 015, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+            </tr>
+        -->
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <div style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 0px; margin: 0px; text-align: left;">Welcome! Pleased to meet you!</div>
+        <div style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 0px; margin: 0px; text-align: left;">This is an experimental sudoku application. It will be developed and upgraded overtime.</div>
+        <div style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 0px; margin: 0px; text-align: left;">The intention is that this will be my first full-fledged HTML, CSS and JS app. Later I will rebuild it using React.</div>
+        <br>
+
+        <br>
+        <table style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000);  padding: 0px; margin: 0px; text-align: left; width:450px; border-collapse: collapse;">
+            <tr>
+                <th id="I_Hc1" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Application Information:</th>
+                <td id="I_Hc2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;"></td>
+                <td id="I_Hc3" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;"></td>
+            </tr>
+            <tr>
+                <th id="I_Hr1" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Version:</th>
+                <td id="I_A1"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">0.0.3</td>
+                <td id="I_B1"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;"></td>
+            </tr>
+            <tr>
+                <th id="I_Hr2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Date Last Updated:</th>
+                <td id="I_A2"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Thu 07 Aug 2025</td>
+                <td id="I_B2"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">07/08/2025</td>
+            </tr>
+            <tr>
+                <th id="I_Hr3" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Date Created:</th>
+                <td id="I_A3"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Tue 05 Aug 2025</td>
+                <td id="I_B3"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">07/08/2025</td>
+            </tr>
+            <tr>
+                <th id="I_Hr4" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Developed by:</th>
+                <td id="I_A4"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Abdur-Rahman Shafiq</td>
+                <td id="I_B4"  style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;"></td>
+            </tr>
+        </table>
+        <br>
+  
+    </body>
+
+    <!--
+    My comments:
+    I have the overall UI skeleton for the sudoku board done.
+    I now need to integrate JS into this interface.
+
+    -->
+
+    <!--
+    <footer style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 0px; margin: 0px; text-align: center;">
+        <div style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">&copy; Abdur-Rahman Shafiq</div>
+    </footer>
+    -->
+
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="data:,">
+    <link rel="apple-touch-icon" sizes="180x180" href="data:,">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:,">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:,">
+    <link rel="manifest" href="data:,">
+    <link rel="mask-icon" href="data:," color="rgba(255, 255, 255, 0.000)">
+    <meta name="msapplication-TileColor" content="rgba(255, 255, 255, 0.000)">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.000)">
+    -->
+</html>
