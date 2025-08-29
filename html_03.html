@@ -1,27 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Sudoku Board #01</title>
-        <link rel="stylesheet" type="text/css" href="css_02.css">
-        <script type="text/javascript" src="js_05.js"></script>
-        <script type="text/javascript" src="js_06.js"></script>
-        <script>
-            function update_A1_1() {
-                document.getElementById("A1").innerHTML = "A1-1";
-            }
-            function update_div_2() {
-                document.getElementById("div_2").innerHTML = "Paragraph changed (A2).";
-            }
-            function update_div_3() {
-                document.getElementById("div_3").innerHTML = "Paragraph changed (A3).";
-            }
-        </script>
+        <script type="module" src="./js_06.js"></script>
     </head>
-
-    <meta charset="UTF-8">
-
     <body class="body_1">
         <h1>Sudoku Board:</h1>
+        <button onclick="alert_date_1()">Show Date</button>
+        <br>
+        <br>
         <br>
 
         <table  class="table_1">
@@ -38,6 +27,7 @@
                 <th id="Hc9" class="table_1_headers_column_1">I</th>
             </tr>
             <tr>
+
                 <th id="Hr1" class="table_1_headers_row_1">1</th>
                 <td id="A1"  class="table_1_square_1" onclick="update_A1_1()">A1</td>
                 <td id="B1"  class="table_1_square_1">B1</td>
@@ -262,9 +252,13 @@
             </tr>
         </table>
         <br>
-  
+
+        
     </body>
 
+    <link rel="stylesheet" type="text/css" href="css_02.css">
+    <!--<script type="text/javascript" src="js_05.js"></script>-->
+    
 
 
     <!--
@@ -275,6 +269,7 @@
     All the CSS has been moved into a separate style sheet. Honestly this is so much better now.
 
     Practice integrating JS into HTML. Then move it into its own file(s).
+    This is the bit I'm stuck on and it's absolutely crucial I get this right.
 
     -->
 
