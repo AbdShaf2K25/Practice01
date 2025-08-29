@@ -44,7 +44,7 @@ console.log("Module js_06.js | Execution Start");
 printName(User_1);
 printAge(User_1);
 printName(User_2);
-printAge(User_2;
+printAge(User_2);
 printName(User_3);
 printAge(User_3);
 printName(User_4);
