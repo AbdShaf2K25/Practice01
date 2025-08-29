@@ -17,3 +17,5 @@ export {
     printName,
     printAge
 }
+
+console.log("Module js_07.js loaded");
