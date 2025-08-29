@@ -20,8 +20,8 @@ function alert_date_1(){
     alert("Today's date is " + d);
 }
 
-import {User, printName, printAge } from './js_07.js';
-
+import User from './js_07.js';
+import {printName, printAge } from './js_07.js';
 
 export {
      update_A1_1
@@ -39,3 +39,6 @@ const User_1 = new User("Alice", 30);
 const User_2 = new User("Bob", 28);
 const User_3 = new User("Camila", 29);
 const User_4 = new User("Daniel", 29);
+
+console.log("Module js_06.js | I have no idea why this isn't loading properly.");
+console.log("Module js_06.js | 2");
