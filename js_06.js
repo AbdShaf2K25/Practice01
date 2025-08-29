@@ -40,5 +40,13 @@ const User_2 = new User("Bob", 28);
 const User_3 = new User("Camila", 29);
 const User_4 = new User("Daniel", 29);
 
-console.log("Module js_06.js | I have no idea why this isn't loading properly.");
-console.log("Module js_06.js | 2");
+console.log("Module js_06.js | Execution Start");
+printName(User_1);
+printAge(User_1);
+printName(User_2);
+printAge(User_2;
+printName(User_3);
+printAge(User_3);
+printName(User_4);
+printAge(User_4);
+console.log("Module js_06.js | Execution Terminate");
