@@ -1,3 +1,38 @@
+console.log("Module js_07.js | Load Start");
+console.log("Module js_07.js | Execution Start");
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+function printName(user){
+    console.log(`User's name is ${user.name}`);
+}
+function printAge(user){
+    console.log(`User's age is ${user.age}`);
+}
+
+//export default User
+export {
+    User,
+    printName,
+    printAge
+}
+console.log("Module js_07.js | Execution Terminate");
+console.log("Module js_07.js | Load Terminate");
+
+console.log("Module js_09.js | Load Start");
+console.log("Module js_09.js | Execution Start");
+import * as js_06 from './js_06.js'
+
+const button_2 = document.getElementById("button_2");
+button_2.addEventListener("click", js_06.alert_date_1);
+
+console.log("Module js_09.js | Execution Terminate");
+console.log("Module js_09.js | Load Terminate");
+
 console.log("Module js_06.js | Load Start");
 console.log("Module js_06.js | Execution Start");
 let cell_A1 = 1;
