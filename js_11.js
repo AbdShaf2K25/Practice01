@@ -1,84 +1,141 @@
-console.log("Module js_07.js | Load Start");
-console.log("Module js_07.js | Execution Start");
-class User {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
+console.log("Module js_11.js | Execution Start");
+
+class Cell {
+    constructor(cell_id,cell_column,cell_row){
+         this.cell_id       = cell_id
+        ;this.cell_column   = cell_column
+        ;this.cell_row      = cell_row
+        ;this.cell_count    = cell_row
+        ;this.cell_string   = cell_column + cell_row
+
+        ;this.cell          = document.getElementById(cell_id)
+        ;this.cell.addEventListener("click", this.F_update_text.bind(this))
+        ;
+    }
+    F_update_counter(val=1){
+        this.cell_count+=val;
+    }
+    F_update_text(text_new="|#"){
+         this.cell_count     += 1
+        ;this.cell_string    =  this.cell_column + this.cell_count
+/*
+        ;let str_console_T1 =
+                "| ["
+            +   this.cell_id
+            +   "] | ["
+            +   this.cell_column
+            +   this.cell_row
+            +   "] | "
+            +   "Count: ["
+            +   this.cell_count
+            +   "] | "
+            +   "String: ["
+            +   this.cell_string
+            +   "] | "
+            +   "Cell_Obj: ["
+            +   this.cell
+            +   "] | [#############]"
+            ;console.log(str_console_T1);
+        ;
+*/
+        ;document.getElementById(this.cell_id).innerHTML = this.cell_string
+        ;let str_console =
+                "| ["
+            +   this.cell_column
+            +   this.cell_row
+            +   "] | Updated To: ["
+            +   this.cell_string
+            +   "] |"
+        ;console.log(str_console);
+        ;
+    }
+    F_alert_date(){
+         let d = new Date();
+        //;this.cell_string    =  this.cell_column & this.cell_count
+        //;document.getElementById(this.cell_id).innerHTML = this.cell_string
+        ;let str_console =
+                "Today's date is: "
+            +   d
+            ;
+            //&   this.cell_row
+            //&   " updated to: "
+            //&   this.cell_string
+            //&   " |"
+        ;console.log(str_console)
+        ;alert(str_console)
+        ;
+    }
+    F_log_text(text_new="|#"){
+        ;let str_console =
+                "| ["
+            +   this.cell_id
+            +   "] | ["
+            +   this.cell_column
+            +   this.cell_row
+            +   "] | "
+            +   "Count: ["
+            +   this.cell_count
+            +   "] | "
+            +   "String: ["
+            +   this.cell_string
+            +   "] | "
+            +   "Cell_Obj: ["
+            +   this.cell
+            +   "] |"
+            ;console.log(str_console);
+        ;
+    }
+    F_HTML_addEventListener(text_new="|#"){
+        // this.cell          = document.getElementById(cell_id)
+        //;document.addEventListener("click", this.F_update_text)
+        ;document.getElementById(this.cell_id).addEventListener("click", this.F_alert_date);
+
+        //this.cell_count     += 1
+        //;this.cell_string    =  this.cell_column + this.cell_count
+
+        ;let str_console_T1 =
+                "| ["
+            +   this.cell_column
+            +   this.cell_row
+            +   "] | Updated To: ["
+            +   this.cell_string
+            +   "] | [#############]"
+        ;console.log(str_console_T1);
+
+        //;document.getElementById(String(this.cell_id)).innerHTML = String(this.cell_string)
+        ;let str_console =
+                "| ["
+            +   this.cell_column
+            +   this.cell_row
+            +   "] | Updated To: ["
+            +   this.cell_string
+            +   "] |"
+        ;console.log(str_console);
+        ;
     }
 }
 
-function printName(user){
-    console.log(`User's name is ${user.name}`);
-}
-function printAge(user){
-    console.log(`User's age is ${user.age}`);
-}
+//        ;this.cell          = document.getElementById(cell_id)
+//        ;document.addEventListener("click", this.F_update_text)
+        //;console.log(this.cell_id)
+//document.getElementById("A1").addEventListener("click", Cell_A1.F_alert_date);
 
-//export default User
-export {
-    User,
-    printName,
-    printAge
-}
-console.log("Module js_07.js | Execution Terminate");
-console.log("Module js_07.js | Load Terminate");
+/*
+         this.cell_id       = cell_id
+        ;this.cell_column   = cell_column
+        ;this.cell_row      = cell_row
+        ;this.cell_count    = cell_row
+        ;this.cell_string   = cell_column & cell_row
 
-console.log("Module js_09.js | Load Start");
-console.log("Module js_09.js | Execution Start");
-import * as js_06 from './js_06.js'
+        ;this.cell          = document.getElementById(cell_id)
+        ;this.cell.addEventListener("click", this.F_update_text)
+*/
 
-const button_2 = document.getElementById("button_2");
-button_2.addEventListener("click", js_06.alert_date_1);
-
-console.log("Module js_09.js | Execution Terminate");
-console.log("Module js_09.js | Load Terminate");
-
-console.log("Module js_06.js | Load Start");
-console.log("Module js_06.js | Execution Start");
-let cell_A1 = 1;
-let cell_A2 = 2;
-let cell_A3 = 3;
-
-function update_A1_1(){
-    cell_A1 += 1;
-    console.log("A1 updated to:   " + cell_A1);
-}
-function update_A2_1(){
-    cell_A2 += 1;
-    console.log("A2 updated to:   " + cell_A2);
-}
-function update_A3_1(){
-    cell_A3 += 1;
-    console.log("A3 updated to:   " + cell_A3);
-}
-
-function alert_date_1(){
-    let d = new Date();
-    alert("Today's date is " + d);
-}
-
-import * as js_07 from './js_07.js'
 
 export {
-     update_A1_1
-    ,update_A2_1
-    ,update_A3_1
-    ,alert_date_1
-    ,js_07
+     Cell
 }
 
-const User_1 = new js_07.User("Alice", 3000);
-const User_2 = new js_07.User("Bob", 2800);
-const User_3 = new js_07.User("Camila", 2900);
-const User_4 = new js_07.User("Daniel", 2900);
+console.log("Module js_11.js | Execution Terminate");
 
-js_07.printName(User_1);
-js_07.printAge(User_1);
-js_07.printName(User_2);
-js_07.printAge(User_2);
-js_07.printName(User_3);
-js_07.printAge(User_3);
-js_07.printName(User_4);
-js_07.printAge(User_4);
-console.log("Module js_06.js | Execution Terminate");
-console.log("Module js_06.js | Load Terminate");
+
