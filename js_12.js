@@ -41,7 +41,7 @@ const Cell_G4 = new js_11.Cell("G4", "G", 4);
 const Cell_H4 = new js_11.Cell("H4", "H", 4);
 const Cell_I4 = new js_11.Cell("I4", "I", 4);
 
-const Cell_A5 = new js_11.Cell("A1", "A", 1);
+const Cell_A5 = new js_11.Cell("A5", "A", 5);
 const Cell_B5 = new js_11.Cell("B5", "B", 5);
 const Cell_C5 = new js_11.Cell("C5", "C", 5);
 const Cell_D5 = new js_11.Cell("D5", "D", 5);
@@ -90,6 +90,24 @@ const Cell_F9 = new js_11.Cell("F9", "F", 9);
 const Cell_G9 = new js_11.Cell("G9", "G", 9);
 const Cell_H9 = new js_11.Cell("H9", "H", 9);
 const Cell_I9 = new js_11.Cell("I9", "I", 9);
+
+
+const Cell_C_E1 = new js_11.Cell("C_E1", "E", 1);
+const Cell_C_D2 = new js_11.Cell("C_D2", "D", 2);
+const Cell_C_E2 = new js_11.Cell("C_E2", "E", 2);
+const Cell_C_F2 = new js_11.Cell("C_F2", "F", 2);
+const Cell_C_E3 = new js_11.Cell("C_E3", "E", 3);
+
+
+const Cell_C_A4 = new js_11.Cell("C_A4", "A", 1);
+const Cell_C_B4 = new js_11.Cell("C_B4", "B", 2);
+const Cell_C_C4 = new js_11.Cell("C_C4", "C", 3);
+const Cell_C_D4 = new js_11.Cell("C_D4", "D", 4);
+const Cell_C_E4 = new js_11.Cell("C_E4", "E", 5);
+const Cell_C_F4 = new js_11.Cell("C_F4", "F", 6);
+const Cell_C_G4 = new js_11.Cell("C_G4", "G", 7);
+const Cell_C_H4 = new js_11.Cell("C_H4", "H", 8);
+const Cell_C_I4 = new js_11.Cell("C_I4", "I", 9);
 
 
 

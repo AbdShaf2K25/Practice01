@@ -75,4 +75,31 @@ Cell_A1.F_update_text("New text for A3");
 Cell_A1.F_log_text();
 */
 
+//        ;this.cell          = document.getElementById(cell_id)
+//        ;document.addEventListener("click", this.F_update_text)
+        //;console.log(this.cell_id)
+//document.getElementById("A1").addEventListener("click", Cell_A1.F_alert_date);
+
+/*
+         this.cell_id       = cell_id
+        ;this.cell_column   = cell_column
+        ;this.cell_row      = cell_row
+        ;this.cell_count    = cell_row
+        ;this.cell_string   = cell_column & cell_row
+
+        ;this.cell          = document.getElementById(cell_id)
+        ;this.cell.addEventListener("click", this.F_update_text)
+*/
+
+/*
+        ;let str_console =
+                "| ["
+            +   this.cell_column
+            +   this.cell_row
+            +   "] | Updated To: ["
+            +   this.cell_string
+            +   "] |"
+        ;console.log(str_console);
+*/
+
 

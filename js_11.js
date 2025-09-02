@@ -4,8 +4,8 @@ class Cell {
     constructor(cell_id,cell_column,cell_row){
          this.cell_id       = cell_id
         ;this.cell_column   = cell_column
-        ;this.cell_row      = cell_row
-        ;this.cell_count    = cell_row
+        ;this.cell_row      = Number(cell_row)
+        ;this.cell_count    = Number(cell_row)
         ;this.cell_string   = cell_column + cell_row
 
         ;this.cell          = document.getElementById(cell_id)
@@ -17,8 +17,8 @@ class Cell {
     }
     F_update_text(text_new="|#"){
          this.cell_count     += 1
-        ;this.cell_string    =  this.cell_column + this.cell_count
-/*
+        ;this.cell_string    =  String(this.cell_column) + String(this.cell_count)
+//*
         ;let str_console_T1 =
                 "| ["
             +   this.cell_id
@@ -37,8 +37,9 @@ class Cell {
             +   "] | [#############]"
             ;console.log(str_console_T1);
         ;
-*/
+//*/
         ;document.getElementById(this.cell_id).innerHTML = this.cell_string
+/*
         ;let str_console =
                 "| ["
             +   this.cell_column
@@ -47,6 +48,7 @@ class Cell {
             +   this.cell_string
             +   "] |"
         ;console.log(str_console);
+*/
         ;
     }
     F_alert_date(){
@@ -115,21 +117,6 @@ class Cell {
     }
 }
 
-//        ;this.cell          = document.getElementById(cell_id)
-//        ;document.addEventListener("click", this.F_update_text)
-        //;console.log(this.cell_id)
-//document.getElementById("A1").addEventListener("click", Cell_A1.F_alert_date);
-
-/*
-         this.cell_id       = cell_id
-        ;this.cell_column   = cell_column
-        ;this.cell_row      = cell_row
-        ;this.cell_count    = cell_row
-        ;this.cell_string   = cell_column & cell_row
-
-        ;this.cell          = document.getElementById(cell_id)
-        ;this.cell.addEventListener("click", this.F_update_text)
-*/
 
 
 export {
