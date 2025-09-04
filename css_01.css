@@ -1,0 +1,101 @@
+
+table_1{
+     background-color:rgba(000, 000, 000, 1.000)
+    ;border: 0px solid rgba(000, 000, 000, 0.000)
+    ;color: rgba(255, 255, 255, 1.000)
+    ;padding: 0px
+    ;margin: 0px auto
+    ;text-align: center
+    ;/*width:800px*/
+    ;border-collapse: collapse
+    ;font-family: Arial, sans-serif
+}
+
+table_2{
+     background-color:rgba(000, 000, 000, 1.000)
+    ;border: 0px solid rgba(000, 000, 000, 0.000)
+    ;color: rgba(255, 255, 255, 1.000)
+    ;padding: 0px
+    ;margin: 0px auto
+    ;text-align: center
+    ;/*width:800px*/
+    ;border-collapse: collapse
+    ;font-family: Arial, sans-serif
+}
+
+row_1{
+     background-color: rgba(047, 005, 123, 1.000)
+    ;border: 2px solid rgba(000, 253, 143, 1.000)
+    ;color: rgba(255, 255, 255, 1.000)
+    ;padding: 8px
+    ;margin: 0px
+    ;text-align: center
+}
+
+row_2{
+        background-color: rgba(086, 008, 122, 1.000)
+        ;border: 2px solid rgba(000, 253, 143, 1.000)
+        ;color: rgba(255, 255, 255, 1.000)
+        ;padding: 8px
+        ;margin: 0px
+        ;text-align: center
+}
+
+table_3{
+        background-color:rgba(000, 000, 000, 1.000)
+        ;border: 0px solid rgba(000, 000, 000, 0.000)
+        ;color: rgba(255, 255, 255, 1.000)
+        ;padding: 0px
+        ;margin: 0px auto
+        ;text-align: left
+        ;/*width:450px*/
+        ;border-collapse: collapse
+        ;font-family: Arial, sans-serif
+}
+
+row_4{
+        background-color: rgba(047, 005, 123, 1.000)
+        ;border: 2px solid rgba(000, 253, 143, 1.000)
+        ;color: rgba(246, 255, 000, 1.000)
+        ;padding: 2px
+        ;margin: 0px
+        ;text-align: left
+}
+
+
+            <tr>
+                <td id="C_Hr1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_A1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;"></td>
+                <td id="C_B1" style="background-color: rgba(000, 000, 000, 0.000); border: 2px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <div style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 0px; margin: 0px; text-align: left;">Welcome! Pleased to meet you!</div>
+        <br>
+
+        <br>
+        <table style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000);  padding: 0px; margin: 0px; text-align: left; width:450px; border-collapse: collapse;">
+            <tr>
+                <th id="I_Hc1" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;">Application Information:</th>
+                <td id="I_Hc2" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;"></td>
+                <td id="I_Hc3" style="background-color: rgba(047, 005, 123, 1.000); border: 2px solid rgba(000, 253, 143, 1.000); color: rgba(246, 255, 000, 1.000); padding: 2px; margin: 0px; text-align: left;"></td>
+            </tr>
+        </table>
+        <br>
+  
+    </body>
+
+
+    <!--
+    <footer style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 0px; margin: 0px; text-align: center;">
+        <div style="background-color: rgba(000, 000, 000, 1.000); border: 0px solid rgba(000, 000, 000, 0.000); color: rgba(255, 255, 255, 1.000); padding: 8px; margin: 0px; text-align: center;">&copy; Abdur-Rahman Shafiq</div>
+    </footer>
+    -->
+
+
+</html>
