@@ -1,8 +1,10 @@
 console.log("Module js_11.js | Execution Start");
+import * as js_15 from './js_15.js'
 
 class Cell {
-    constructor(cell_id,cell_column,cell_row){
+    constructor(cell_id,cell_type,cell_column,cell_row){
          this.cell_id       = cell_id
+        ;this.cell_type     = cell_type
         ;this.cell_column   = cell_column
         ;this.cell_row      = Number(cell_row)
         ;this.cell_count    = Number(cell_row)
@@ -10,6 +12,9 @@ class Cell {
 
         ;this.cell          = document.getElementById(cell_id)
         ;this.cell.addEventListener("click", this.F_update_text.bind(this))
+        ;js_15.App_1.F_update_selected_cell.bind(this)
+        ;js_15.App_1.F_alert_date.bind(this)
+        ;js_15.App_1.F_log_text.bind(this)
         ;
     }
     F_update_counter(val=1){
@@ -35,7 +40,7 @@ class Cell {
             +   "Cell_Obj: ["
             +   this.cell
             +   "] | [#############]"
-            ;console.log(str_console_T1);
+//            ;console.log(str_console_T1)
         ;
 //*/
         ;document.getElementById(this.cell_id).innerHTML = this.cell_string
@@ -47,24 +52,10 @@ class Cell {
             +   "] | Updated To: ["
             +   this.cell_string
             +   "] |"
-        ;console.log(str_console);
-*/
-        ;
-    }
-    F_alert_date(){
-         let d = new Date();
-        //;this.cell_string    =  this.cell_column & this.cell_count
-        //;document.getElementById(this.cell_id).innerHTML = this.cell_string
-        ;let str_console =
-                "Today's date is: "
-            +   d
-            ;
-            //&   this.cell_row
-            //&   " updated to: "
-            //&   this.cell_string
-            //&   " |"
         ;console.log(str_console)
-        ;alert(str_console)
+*/
+        ;js_15.App_1.F_update_selected_cell(this)
+        ;js_15.App_1.F_log_text()
         ;
     }
     F_log_text(text_new="|#"){
@@ -116,7 +107,12 @@ class Cell {
         ;
     }
 }
-
+/*
+    cell_type
+"cell_main_1"
+"cell_control_navigation"
+"cell_control_number"
+*/
 
 
 export {
