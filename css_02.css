@@ -1,7 +1,7 @@
 
 
 
-.body_1{
+.B_B1{
      color               :rgba(255, 255, 255, 1.000)
     ;background-color    :rgba(000, 000, 000, 1.000)
     ;border              :rgba(000, 000, 000, 0.000) 0px solid
@@ -17,21 +17,21 @@
 
 
 
-.table_1{
+.T_T1{
      color               :rgba(255, 255, 255, 1.000)
     ;background-color    :rgba(000, 000, 000, 1.000)
     ;border              :rgba(000, 000, 000, 0.000) 0px solid
     ;padding             :0px
     ;margin              :0px auto
     ;text-align          :center
-    ;border-collapse     :collapse
+    ;border-collapse     :separate
     ;font-family         :Arial, sans-serif
     ;width               :800px
 }
-.table_1_headers_column_1{
+.C_T1_H_row_1{
      color               :rgba(255, 255, 255, 1.000)
-    ;background-color    :rgba(047, 005, 123, 1.000)
-    ;border              :rgba(000, 253, 143, 1.000) 2px solid
+    ;background-color    :rgba(012, 061, 222, 1.000)
+    ;border              :rgba(255, 255, 255, 1.000) 2px solid
     ;padding             :8px
     ;margin              :0px
     ;text-align          :center
@@ -41,10 +41,10 @@
     ;width               :800px
     */
 }
-.table_1_headers_row_1{
+.C_T1_H_col_1{
      color               :rgba(255, 255, 255, 1.000)
-    ;background-color    :rgba(047, 005, 123, 1.000)
-    ;border              :rgba(000, 253, 143, 1.000) 2px solid
+    ;background-color    :rgba(012, 061, 222, 1.000)
+    ;border              :rgba(255, 255, 255, 1.000) 2px solid
     ;padding             :8px
     ;margin              :0px
     ;text-align          :center
@@ -54,10 +54,10 @@
     ;width               :800px
     */
 }
-.table_1_square_1{
+.C_T1_main_S_1{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(086, 008, 122, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
         ;padding             :8px
         ;margin              :0px
         ;text-align          :center
@@ -67,10 +67,10 @@
         ;width               :800px
         */
 }
-.table_1_square_2{
+.C_T1_main_S_2{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(004, 094, 002, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
         ;padding             :8px
         ;margin              :0px
         ;text-align          :center
@@ -80,10 +80,10 @@
         ;width               :800px
         */
 }
-.table_1_square_3{
+.C_T1_main_S_3{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(120, 000, 000, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
         ;padding             :8px
         ;margin              :0px
         ;text-align          :center
@@ -93,7 +93,223 @@
         ;width               :800px
         */
 }
-.table_1_square_4{
+.C_T1_main_S_4{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgba(124, 028, 193, 1.000)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T1_main_S_5{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgba(012, 160, 064, 1.000)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T1_main_S_6{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgba(148, 161, 014, 1.000)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T1_main_S_7{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgba(013, 136, 193, 1.000)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+
+}
+.C_T1_main_S_8{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgba(014, 086, 194, 1.000)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T1_main_S_9{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgba(136, 030, 030, 1.000)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+
+
+
+.C_T1_main_sel_1{
+         color               :rgba(000, 000, 255, 1.000)
+        ;background-color    :rgba(255, 000, 255, 1.000)
+        ;border              :rgba(000, 000, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T1_H_row_sel_1{
+         color               :rgba(000, 000, 000, 1.000)
+        ;background-color    :rgba(255, 255, 255, 1.000)
+        ;border              :rgba(000, 000, 000, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T1_H_col_sel_1{
+         color               :rgba(000, 000, 000, 1.000)
+        ;background-color    :rgba(255, 255, 255, 1.000)
+        ;border              :rgba(000, 000, 000, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T1_main_sel_2{
+         color               :rgba(000, 000, 255, 1.000)
+        ;background-color    :rgba(255, 255, 000, 1.000)
+        ;border              :rgba(000, 000, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+
+
+
+.T_T2{
+     color               :rgba(255, 255, 255, 1.000)
+    ;background-color    :rgba(000, 000, 000, 1.000)
+    ;border              :rgba(000, 000, 000, 0.000) 0px solid
+    ;padding             :0px
+    ;margin              :0px auto
+    ;text-align          :center
+    ;border-collapse     :separate
+    ;font-family         :Arial, sans-serif
+    ;width               :800px
+}
+.C_T2_H_row_1{
+     color               :rgba(000, 000, 000, 0.000)
+    ;background-color    :rgba(000, 000, 000, 0.000)
+    ;border              :rgba(000, 000, 000, 0.000) 2px /*solid*/
+    ;padding             :8px
+    ;margin              :0px
+    ;text-align          :center
+    ;border-collapse     :collapse
+    ;font-family         :Arial, sans-serif
+    /*
+    ;width               :800px
+    */
+}
+.C_T2_H_col_1{
+         color               :rgba(000, 000, 000, 0.000)
+        ;background-color    :rgba(000, 000, 000, 0.000)
+        ;border              :rgba(000, 000, 000, 0.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T2_main_U_1{
+         color               :rgba(000, 000, 000, 0.000)
+        ;background-color    :rgba(000, 000, 000, 0.000)
+        ;border              :rgba(000, 000, 000, 0.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T2_main_C_1{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgba(012, 061, 222, 1.000)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+.C_T2_main_C_2{
+         color               :rgba(255, 255, 255, 1.000)
+        ;background-color    :rgb(42, 29, 159)
+        ;border              :rgba(255, 255, 255, 1.000) 2px solid
+        ;padding             :8px
+        ;margin              :0px
+        ;text-align          :center
+        ;border-collapse     :collapse
+        ;font-family         :Arial, sans-serif
+        /*
+        ;width               :800px
+        */
+}
+
+
+
+.C_T2_main_obs_1{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(124, 028, 193, 1.000)
         ;border              :rgba(000, 253, 143, 1.000) 2px solid
@@ -106,7 +322,7 @@
         ;width               :800px
         */
 }
-.table_1_square_5{
+.C_T2_main_obs_2{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(012, 160, 064, 1.000)
         ;border              :rgba(000, 253, 143, 1.000) 2px solid
@@ -119,7 +335,7 @@
         ;width               :800px
         */
 }
-.table_1_square_6{
+.C_T2_main_obs_3{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(218, 015, 015, 1.000)
         ;border              :rgba(000, 253, 143, 1.000) 2px solid
@@ -132,100 +348,7 @@
         ;width               :800px
         */
 }
-.table_1_square_7{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(013, 136, 193, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-
-}
-.table_1_square_8{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(017, 179, 114, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
-.table_1_square_9{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(218, 095, 095, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
-
-
-
-.table_2{
-     color               :rgba(255, 255, 255, 1.000)
-    ;background-color    :rgba(000, 000, 000, 1.000)
-    ;border              :rgba(000, 000, 000, 0.000) 0px solid
-    ;padding             :0px
-    ;margin              :0px auto
-    ;text-align          :center
-    ;border-collapse     :collapse
-    ;font-family         :Arial, sans-serif
-    ;width               :800px
-}
-.table_2_headers_column_1{
-     color               :rgba(255, 255, 255, 1.000)
-    ;background-color    :rgba(047, 005, 123, 1.000)
-    ;border              :rgba(000, 253, 143, 1.000) 2px solid
-    ;padding             :8px
-    ;margin              :0px
-    ;text-align          :center
-    ;border-collapse     :collapse
-    ;font-family         :Arial, sans-serif
-    /*
-    ;width               :800px
-    */
-}
-.table_2_headers_row_1{
-     color               :rgba(255, 255, 255, 1.000)
-    ;background-color    :rgba(000, 000, 000, 0.000)
-    ;border              :rgba(000, 000, 000, 0.000) 2px /*solid*/
-    ;padding             :8px
-    ;margin              :0px
-    ;text-align          :center
-    ;border-collapse     :collapse
-    ;font-family         :Arial, sans-serif
-    /*
-    ;width               :800px
-    */
-}
-.table_2_cell_unused_1{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(000, 000, 000, 0.000)
-        ;border              :rgba(000, 000, 000, 0.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
-.table_2_cell_unused_2{
+.C_T2_main_obs_4{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(000, 000, 000, 0.000)
         ;border              :rgba(000, 000, 000, 0.000) 2px /*solid*/
@@ -238,75 +361,10 @@
         ;width               :800px
         */
 }
-.table_2_cell_control_1{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(047, 005, 123, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
-.table_2_cell_control_2{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(184, 123, 000, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
-.table_2_cell_obsolete_1{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(124, 028, 193, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
-.table_2_cell_obsolete_2{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(012, 160, 064, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
-.table_2_cell_obsolete_3{
-         color               :rgba(255, 255, 255, 1.000)
-        ;background-color    :rgba(218, 015, 015, 1.000)
-        ;border              :rgba(000, 253, 143, 1.000) 2px solid
-        ;padding             :8px
-        ;margin              :0px
-        ;text-align          :center
-        ;border-collapse     :collapse
-        ;font-family         :Arial, sans-serif
-        /*
-        ;width               :800px
-        */
-}
 
 
 
-.div_1{
+.D_D1{
          color               :rgba(255, 255, 255, 1.000)
         ;background-color    :rgba(000, 000, 000, 1.000)
         ;border              :rgba(000, 000, 000, 0.000) 0px solid
@@ -322,7 +380,7 @@
 
 
 
-.table_3{
+.T_T3{
      color               :rgba(255, 255, 255, 1.000)
     ;background-color    :rgba(000, 000, 000, 1.000)
     ;border              :rgba(000, 000, 000, 0.000) 0px solid
@@ -333,7 +391,7 @@
     ;font-family         :Arial, sans-serif
     ;width               :450px
 }
-.table_3_cell_1{
+.C_T3_main_C_1{
          color               :rgba(246, 255, 000, 1.000)
         ;background-color    :rgba(047, 005, 123, 1.000)
         ;border              :rgba(000, 253, 143, 1.000) 2px solid

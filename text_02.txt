@@ -1,0 +1,131 @@
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+        Notes 2
+        Change Log
+Sat 07 Feb 2026
+Fri 06 Feb 2026
+Sun 25 Jan 2026
+Sat 24 Jan 2026
+Fri 23 Jan 2026
+Thu 22 Jan 2026
+Wed 21 jan 2026
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+I've returned to coding after approximately four to five months. It feels a bit strange but also
+quite nice as well. I want to get my knowledge and skills back up to scratch, complete the
+development of this app,  and then rebuilt it in several different javascript frameworks.
+
+I don't need to get the soduko algorithm or mechanics implemented for now, that can wait for a later date.
+
+I also want to transition from a visual studio code based workflow to a visual studio one.
+Visual studio is a bit of a different environment that I'll need to get myself familiar with it.
+
+Also at some point I want to try using notepad++ as a dev environment as well.
+
+Also, I need to redo my laptop's monitor connections. I'm getting dropouts if I use a single
+cable solution (and it also limits me to 1080p). I will need to switch the USB hub I'm using
+(at least under windows). It still cuts out but at least I now have a 4K display.
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+Hey gemini, I'm doing some web development work, I have a line of javascript code which works
+perfectly:
+
+document.getElementById(this.cell_id).style.borderColor = "yellow";
+
+In css instead of using "yellow", I can use the rgba function to do the same thing. I would
+like you to find the javascript equivalent, because the following won't work:
+
+document.getElementById(this.cell_id).style.borderColor = rgb(255, 255, 255);
+
+Gemini worked really well for this, it instantly gave me the right answer. Dark reader does
+interfere (in a good way) and so I had to play around a little to get it to work as expected.
+
+So from now on, if I need help, straight to gemini it is.
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+        OLDER Notes
+Cell::F_update_text needs to be reworked to account for the cell type.
+This then needs to be pushed to App_1::F_update_selected_cell.
+However I need to not duplicate code here.
+If I need to split this into three separate methods then do so.
+After that I just need to update the display for each cell.
+Then I have a good solid foundation for my app.
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+        To Do
+I need to put a row (as a spacer) between the arrow cells and the number cells.
+    DONE
+These cells need to not have a highlight.
+
+I will need to define a whole bunch of additional css, to implement cell "states". This is
+the cleanest and most modular way to implement the rest of the interface/functionality. 
+This allows the implementation of:
+    Selected Cell Highlight
+        CSS DONE
+    Selected Cell Row Highlight
+        CSS DONE
+    Selected Cell Column Highlight
+        CSS DONE
+    Previous Cell Highlight (but no associated row highlight)
+        CSS DONE
+    Filled-In Cell Highlight
+        NOT IMPLEMENTED, IS this necessary ???
+
+If no cell is selected and if using the arrow key cells to navigate default to A1.
+If a cell is selected, use the number row to change it's value.
+
+If a cell is selected, then a new cell is selected, as long as it isn't updated,
+don't update the previous cell highlight.
+
+Add a deselect button (first press to clear selected, second press to clear previous).
+    HTML DONE, JS DONE, rest to be implemented
+Add a clear button (which updates the previous cell highlight).
+    HTML DONE, JS DONE, rest to be implemented
+
+###
+    Now the bulk of what I need to do is JS related. I just need to get the functionality
+    implemented.
+
+    I need to import the css file.
+    I need to swap between style selectors.
+    Actually, I've figured out the easiest way to do this. I just need to change the CSS class of the HTML element in JS. This is actually very easy to do.
+
+    The app is initialised, before the cells are initialised.
+    That means the cells can call the app but not the other way around.
+    Unless, I need methods to the app, after the cells exist, which is possible.
+    But, it must be done after the cells exist, so I need another JS file.
+###
+
+Move the rest of the UI to a separate tab?
+    There is absolutely no need for it to be displayed alongside the sudoku board.
+
+Then I can work on implementing the sudoku algorithm.
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+
+So each HTML element needs an ID. The class can be set via JS, so that can be moved to the JS.
+
+The element content can also be moved to the JS. This does mean I have most of the data in one place, rather than split over two separate files.
+
+I also have another thought, the outer cells need to be defined in JS. Even if they don't have a event listener binded to them.
+This improves my code consistency and in future if I ever want to do anything will said cells I can.
+
+
+
+In the future I need to take into account best practice and implementation for accessibility. Using a HTML skeleton with JS content injection works but is strongly discouraged.
+
+It took a long time for me to refactor my cell IDs but at least it's mostly done now. I now need to redo the function call interface.
+
+So refactoring and cleaning up my code took a lot longer than I thought but it's now done.
+
+
+
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+        Optionally
+Implement zoom in/out?
+Implement app theming?
+Implement a sudoku algorithm.
+Once the entire app is developed, clean up the repo.
+Have a google about code quality and see if there are any improvement I can make.
+Perhaps fork the app and implement a chess board or other such thing?
+    E.g. a mini-pardus of sorts.
+Learn to program a lot faster.
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+
+
+
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####

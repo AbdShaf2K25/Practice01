@@ -1,4 +1,26 @@
-console.log("Module js_14.js | Execution Start");
+console.log("Module js_16.js | Execution Start");
+
+/// I want to add methods to the App class, after the app and cell objects have been initialised.
+/// The definitions of said methods will be housed here and "js_17.js" will initialise them.
+
+// The code below is how I will have to do things.
+
+/*
+class Robot {
+  constructor(model) {
+    this.model = model;
+  }
+}
+
+const bot1 = new Robot("T-800");
+
+// Adding to the prototype later
+Robot.prototype.identify = function() {
+  console.log(`Model: ${this.model}`);
+};
+
+bot1.identify(); // "Model: T-800"
+*/
 
 class App {
      selected_cell_id       = "999"
@@ -76,6 +98,6 @@ export {
      App
 }
 
-console.log("Module js_14.js | Execution Terminate");
+console.log("Module js_16.js | Execution Terminate");
 
 
