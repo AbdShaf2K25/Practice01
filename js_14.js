@@ -1,40 +1,66 @@
 console.log("Module js_14.js | Execution Start");
 
 class App {
-     selected_cell_id       = "999"
-    ;selected_cell_type     = "888"
-    ;selected_cell_column   = "777"
-    ;selected_cell_row      = "666"
-    ;selected_cell_count    = "555"
-    ;selected_cell_string   = "444"
-    ;selected_cell          = "333"
-    ;previous_cell_id       = "999"
-    ;previous_cell_type     = "888"
-    ;previous_cell_column   = "777"
-    ;previous_cell_row      = "666"
-    ;previous_cell_count    = "555"
-    ;previous_cell_string   = "444"
-    ;previous_cell          = "333"
+     cell_sel_1_id          = ""
+    ;cell_sel_1_table       = ""
+    ;cell_sel_1_row         = ""
+    ;cell_sel_1_column      = ""
+    ;cell_sel_1_attribute   = ""
+    ;cell_sel_1_type        = ""
+    ;cell_sel_1_css_class   = ""
+    ;cell_sel_1_data        = ""
+    ;cell_sel_1_obj         = ""
+    ;cell_sel_1_count       = ""
+
+     cell_prev_1_id          = ""
+    ;cell_prev_1_table       = ""
+    ;cell_prev_1_row         = ""
+    ;cell_prev_1_column      = ""
+    ;cell_prev_1_attribute   = ""
+    ;cell_prev_1_type        = ""
+    ;cell_prev_1_css_class   = ""
+    ;cell_prev_1_data        = ""
+    ;cell_prev_1_obj         = ""
+    ;cell_prev_1_count       = ""
+    ;
     /*
     constructor(){
-         this.selected_cell_id       = ""
-        ;this.selected_cell_type     = ""
-        ;this.selected_cell_column   = ""
-        ;this.selected_cell_row      = ""
-        ;this.selected_cell_count    = ""
-        ;this.selected_cell_string   = ""
-        ;this.selected_cell          = ""
+         cell_sel_1_id          = ""
+        ;cell_sel_1_table       = ""
+        ;cell_sel_1_row         = ""
+        ;cell_sel_1_column      = ""
+        ;cell_sel_1_attribute   = ""
+        ;cell_sel_1_type        = ""
+        ;cell_sel_1_css_class   = ""
+        ;cell_sel_1_data        = ""
+        ;cell_sel_1_obj         = ""
+        ;cell_sel_1_count       = ""
         ;
     }
     */
     F_update_selected_cell(cell){
-         this.selected_cell_id      = cell.cell_id
-        ;this.selected_cell_type    = cell.cell_type
-        ;this.selected_cell_column  = cell.cell_column
-        ;this.selected_cell_row     = cell.cell_row
-        ;this.selected_cell_count   = cell.cell_count
-        ;this.selected_cell_string  = cell.cell_string
-        ;this.selected_cell         = cell.cell
+         this.cell_prev_1_id        = this.cell_sel_1_id
+        ;this.cell_prev_1_table     = this.cell_sel_1_table
+        ;this.cell_prev_1_row       = this.cell_sel_1_row
+        ;this.cell_prev_1_column    = this.cell_sel_1_column
+        ;this.cell_prev_1_attribute = this.cell_sel_1_attribute
+        ;this.cell_prev_1_type      = this.cell_sel_1_type
+        ;this.cell_prev_1_css_class = this.cell_sel_1_css_class
+        ;this.cell_prev_1_data      = this.cell_sel_1_data
+        ;this.cell_prev_1_obj       = this.cell_sel_1_obj
+        ;this.cell_prev_1_count     = this.cell_sel_1_count
+
+        ;this.cell_sel_1_id         = cell.id
+        ;this.cell_sel_1_table      = cell.table
+        ;this.cell_sel_1_row        = cell.row
+        ;this.cell_sel_1_column     = cell.column
+        ;this.cell_sel_1_attribute  = cell.attribute
+        ;this.cell_sel_1_type       = cell.type
+        ;this.cell_sel_1_css_class  = cell.css_class
+        ;this.cell_sel_1_data       = cell.data
+        ;this.cell_sel_1_obj        = cell.cell_obj
+        ;this.cell_sel_1_count      = cell.count
+        ;
     }
     F_alert_date(){
          let d = new Date();
@@ -48,23 +74,27 @@ class App {
     }
     F_log_text(text_new="|#"){
         ;let str_console =
-                "| ["
-            +   this.selected_cell_id
-            +   "] | ["
-            +   this.selected_cell_type
-            +   "] | ["
-            +   this.selected_cell_column
-            +   this.selected_cell_row
-            +   "] | "
-            +   "Count: ["
-            +   this.selected_cell_count
-            +   "] | "
-            +   "String: ["
-            +   this.selected_cell_string
-            +   "] | "
-            +   "Cell_Obj: ["
-            +   this.selected_cell
-            +   "] | [^^^^^^^^^^^^^]"
+                "ID: ["
+            +   this.cell_sel_1_id
+            +   "] Tbl: ["
+            +   this.cell_sel_1_table
+            +   "] Row: ["
+            +   this.cell_sel_1_row
+            +   "] Col: ["
+            +   this.cell_sel_1_column
+            +   "] Attr: ["
+            +   this.cell_sel_1_attribute
+            +   "] Type: ["
+            +   this.cell_sel_1_type
+            +   "] CSS: ["
+            +   this.cell_sel_1_css_class
+            +   "] Data: ["
+            +   this.cell_sel_1_data
+            +   "] C_Obj: ["
+            +   this.cell_sel_1_obj
+            +   "] Cnt: ["
+            +   this.cell_sel_1_count
+            +   "]"
             ;console.log(str_console);
         ;
     }

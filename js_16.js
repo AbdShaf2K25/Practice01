@@ -21,6 +21,39 @@ Robot.prototype.identify = function() {
 bot1.identify(); // "Model: T-800"
 */
 
+
+
+/*
+Cell constructor(
+         id
+        ,table
+        ,row
+        ,column
+        ,attribute
+        ,type
+        ,css_class
+        ,data
+)
+attribute data
+        H + [W,X,Y,X] = header type
+        W, X, Y, Z
+        W = Vertical TOP
+        X = Vertical BOTTOM
+        Y = Horizontal LEFT
+        Z = Horixontal RIGHT
+*/
+// const C_T1_R0_C1   = new js_11.Cell("C_T1_R0_C1" , "T1", "R0", "C1" , "HW", "H_col_1", "C_T1_H_col_1", "A");
+
+/*
+
+update  selected_cell_id
+note it's row and column.
+
+The cell will update first, then trigger the app_1 method.
+
+
+*/
+
 js_14.App.prototype.F_console_log_all_cells = function(){
     js_12.Export_Obj_1.C_T1_R1_C1.F_update_text();
     js_12.Export_Obj_1.C_T1_R1_C2.F_update_text();

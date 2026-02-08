@@ -10,17 +10,6 @@ Fri 23 Jan 2026
 Thu 22 Jan 2026
 Wed 21 jan 2026
 0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
-I've returned to coding after approximately four to five months. It feels a bit strange but also
-quite nice as well. I want to get my knowledge and skills back up to scratch, complete the
-development of this app,  and then rebuilt it in several different javascript frameworks.
-
-At some point I want to switch IDEs, from visual studio code to other ones (& text editors), e.g.
-visual studio code and notepad++. 
-0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
-
-
-
-0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
         To Do
 I will need to define a whole bunch of additional css, to implement cell "states". This is
 the cleanest and most modular way to implement the rest of the interface/functionality. 
@@ -61,40 +50,17 @@ Have a google about code quality and see if there are any improvement I can make
 Perhaps fork the app and implement a chess board or other such thing?
     E.g. a mini-pardus of sorts.
 Learn to program a lot faster.
+In a separate UI tab, add a log box.
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
+Implement the row highlight.
 
-
+I'm now really getting into the zone. It's now time to sign off and continue another time.
 
 0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
-Define another box at the bottom. Use it as a log box.
-Test monkey patching by rendering text into this box. 
-
-I need to figure out how to export everything from js_12.js cleanly, to import into js_16.js.
-
-I want my monkey-patching to be in js_16.js.
 0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
-Hey gemini I have a bunch of javascript files. In one I initialise 1000 objects. I want to export them for use in another file? Would I have to export them like this:
-export {
-      Object1
-     ,Object2
-     ,Object3
-     ...
-}
-
-Or is there an easier way, where I don't have to type out the names of all 1000 objects?
-
-I'm asking because the way I described works perfectly but it's a lot of typing.
 0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
-Gemini stated that I either continue as is, or I create a container object to house all the objects and export that instead. I've decided to use the container object method.
-
-This is now working as expected. So I can monkey patch any code in (in js_16.js) and it works as expected when called from js_17.js.
-
-
-
-
 0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
-
-
-
+0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
 0###-#####1###-#####2###-#####3###-#####4###-#####5###-#####6###-#####7###-#####8###-#####9###-#####
 
 

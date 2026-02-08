@@ -123,7 +123,9 @@ class Cell {
             +   "] |"
         ;console.log(str_console)
 */
+        // Pre-log ???
         ;js_15.App_1.F_update_selected_cell(this)
+        // Here add a UI update function.
         ;js_15.App_1.F_log_text()
         ;
     }
