@@ -1,9 +1,8 @@
 console.log("Module js_16.js | Execution Start");
+import * as js_14 from './js_14.js'
+import * as js_12 from './js_12.js'
 
-/// I want to add methods to the App class, after the app and cell objects have been initialised.
-/// The definitions of said methods will be housed here and "js_17.js" will initialise them.
-
-// The code below is how I will have to do things.
+// I will have to monkey patch using the following example code:
 
 /*
 class Robot {
@@ -22,6 +21,21 @@ Robot.prototype.identify = function() {
 bot1.identify(); // "Model: T-800"
 */
 
+js_14.App.prototype.F_console_log_all_cells = function(){
+    js_12.Export_Obj_1.C_T1_R1_C1.F_update_text();
+    js_12.Export_Obj_1.C_T1_R1_C2.F_update_text();
+    js_12.Export_Obj_1.C_T1_R1_C3.F_update_text();
+
+    js_12.Export_Obj_1.C_T1_R2_C1.F_update_text();
+    js_12.Export_Obj_1.C_T1_R2_C2.F_update_text();
+    js_12.Export_Obj_1.C_T1_R2_C3.F_update_text();
+
+    js_12.Export_Obj_1.C_T1_R3_C1.F_update_text();
+    js_12.Export_Obj_1.C_T1_R3_C2.F_update_text();
+    js_12.Export_Obj_1.C_T1_R3_C3.F_update_text();
+}
+
+/*
 class App {
      selected_cell_id       = "999"
     ;selected_cell_type     = "888"
@@ -49,6 +63,7 @@ class App {
         ;
     }
     */
+   /*
     F_update_selected_cell(cell){
          this.selected_cell_id      = cell.cell_id
         ;this.selected_cell_type    = cell.cell_type
@@ -91,12 +106,14 @@ class App {
         ;
     }
 }
+*/
 
 
-
+/*
 export {
      App
 }
+*/
 
 console.log("Module js_16.js | Execution Terminate");
 

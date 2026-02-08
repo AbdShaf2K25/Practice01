@@ -171,9 +171,9 @@ const C_T2_R0_C4   = new js_11.Cell("C_T2_R0_C4" , "T2", "R0", "C4" , "HW", "H_c
 const C_T2_R0_C5   = new js_11.Cell("C_T2_R0_C5" , "T2", "R0", "C5" , "HW", "H_col_unused_1", "C_T2_H_col_1", "E");
 const C_T2_R0_C6   = new js_11.Cell("C_T2_R0_C6" , "T2", "R0", "C6" , "HW", "H_col_unused_1", "C_T2_H_col_1", "F");
 const C_T2_R0_C7   = new js_11.Cell("C_T2_R0_C7" , "T2", "R0", "C7" , "HW", "H_col_unused_1", "C_T2_H_col_1", "G");
-const C_T2_R0_R8   = new js_11.Cell("C_T2_R0_C8" , "T2", "R0", "C8" , "HW", "H_col_unused_1", "C_T2_H_col_1", "H");
-const C_T2_R0_R9   = new js_11.Cell("C_T2_R0_C9" , "T2", "R0", "C9" , "HW", "H_col_unused_1", "C_T2_H_col_1", "I");
-const C_T2_R0_R10  = new js_11.Cell("C_T2_R0_C10", "T2", "R0", "C10", "HZ", "H_row_unused_1", "C_T2_H_row_1", "" );
+const C_T2_R0_C8   = new js_11.Cell("C_T2_R0_C8" , "T2", "R0", "C8" , "HW", "H_col_unused_1", "C_T2_H_col_1", "H");
+const C_T2_R0_C9   = new js_11.Cell("C_T2_R0_C9" , "T2", "R0", "C9" , "HW", "H_col_unused_1", "C_T2_H_col_1", "I");
+const C_T2_R0_C10  = new js_11.Cell("C_T2_R0_C10", "T2", "R0", "C10", "HZ", "H_row_unused_1", "C_T2_H_row_1", "" );
 
 const C_T2_R1_C0   = new js_11.Cell("C_T2_R1_C0" , "T2", "R1", "C0" , "HY" , "H_row_unused_1", "C_T2_H_row_1" , "1");
 const C_T2_R1_C1   = new js_11.Cell("C_T2_R1_C1" , "T2", "R1", "C1" , "N/A", "C_unused_1"    , "C_T2_main_U_1", "" );
@@ -274,6 +274,262 @@ const C_T3_R4_C1   = new js_11.Cell("C_T3_R4_C1", "T3", "R4", "C1", "N/A", "C_un
 const C_T3_R4_C2   = new js_11.Cell("C_T3_R4_C2", "T3", "R3", "C2", "N/A", "C_unused_1"    , "C_T3_main_C_1", "");
 
 
+
+const Export_Obj_1 = {
+         _Title_T1
+        ,_Body_B1
+        ,H_H1
+
+        ,T_T1
+
+        ,C_T1_R0_C0
+        ,C_T1_R0_C1
+        ,C_T1_R0_C2
+        ,C_T1_R0_C3
+        ,C_T1_R0_C4
+        ,C_T1_R0_C5
+        ,C_T1_R0_C6
+        ,C_T1_R0_C7
+        ,C_T1_R0_C8
+        ,C_T1_R0_C9
+        ,C_T1_R0_C10
+
+        ,C_T1_R1_C0
+        ,C_T1_R1_C1
+        ,C_T1_R1_C2
+        ,C_T1_R1_C3
+        ,C_T1_R1_C4
+        ,C_T1_R1_C5
+        ,C_T1_R1_C6
+        ,C_T1_R1_C7
+        ,C_T1_R1_C8
+        ,C_T1_R1_C9
+        ,C_T1_R1_C10
+
+        ,C_T1_R2_C0
+        ,C_T1_R2_C1
+        ,C_T1_R2_C2
+        ,C_T1_R2_C3
+        ,C_T1_R2_C4
+        ,C_T1_R2_C5
+        ,C_T1_R2_C6
+        ,C_T1_R2_C7
+        ,C_T1_R2_C8
+        ,C_T1_R2_C9
+        ,C_T1_R2_C10
+
+        ,C_T1_R3_C0
+        ,C_T1_R3_C1
+        ,C_T1_R3_C2
+        ,C_T1_R3_C3
+        ,C_T1_R3_C4
+        ,C_T1_R3_C5
+        ,C_T1_R3_C6
+        ,C_T1_R3_C7
+        ,C_T1_R3_C8
+        ,C_T1_R3_C9
+        ,C_T1_R3_C10
+
+        ,C_T1_R4_C0
+        ,C_T1_R4_C1
+        ,C_T1_R4_C2
+        ,C_T1_R4_C3
+        ,C_T1_R4_C4
+        ,C_T1_R4_C5
+        ,C_T1_R4_C6
+        ,C_T1_R4_C7
+        ,C_T1_R4_C8
+        ,C_T1_R4_C9
+        ,C_T1_R4_C10
+
+        ,C_T1_R5_C0
+        ,C_T1_R5_C1
+        ,C_T1_R5_C2
+        ,C_T1_R5_C3
+        ,C_T1_R5_C4
+        ,C_T1_R5_C5
+        ,C_T1_R5_C6
+        ,C_T1_R5_C7
+        ,C_T1_R5_C8
+        ,C_T1_R5_C9
+        ,C_T1_R5_C10
+
+        ,C_T1_R6_C0
+        ,C_T1_R6_C1
+        ,C_T1_R6_C2
+        ,C_T1_R6_C3
+        ,C_T1_R6_C4
+        ,C_T1_R6_C5
+        ,C_T1_R6_C6
+        ,C_T1_R6_C7
+        ,C_T1_R6_C8
+        ,C_T1_R6_C9
+        ,C_T1_R6_C10
+
+        ,C_T1_R7_C0
+        ,C_T1_R7_C1
+        ,C_T1_R7_C2
+        ,C_T1_R7_C3
+        ,C_T1_R7_C4
+        ,C_T1_R7_C5
+        ,C_T1_R7_C6
+        ,C_T1_R7_C7
+        ,C_T1_R7_C8
+        ,C_T1_R7_C9
+        ,C_T1_R7_C10
+
+        ,C_T1_R8_C0
+        ,C_T1_R8_C1
+        ,C_T1_R8_C2
+        ,C_T1_R8_C3
+        ,C_T1_R8_C4
+        ,C_T1_R8_C5
+        ,C_T1_R8_C6
+        ,C_T1_R8_C7
+        ,C_T1_R8_C8
+        ,C_T1_R8_C9
+        ,C_T1_R8_C10
+
+        ,C_T1_R9_C0
+        ,C_T1_R9_C1
+        ,C_T1_R9_C2
+        ,C_T1_R9_C3
+        ,C_T1_R9_C4
+        ,C_T1_R9_C5
+        ,C_T1_R9_C6
+        ,C_T1_R9_C7
+        ,C_T1_R9_C8
+        ,C_T1_R9_C9
+        ,C_T1_R9_C10
+
+        ,C_T1_R10_C0
+        ,C_T1_R10_C1
+        ,C_T1_R10_C2
+        ,C_T1_R10_C3
+        ,C_T1_R10_C4
+        ,C_T1_R10_C5
+        ,C_T1_R10_C6
+        ,C_T1_R10_C7
+        ,C_T1_R10_C8
+        ,C_T1_R10_C9
+        ,C_T1_R10_C10
+
+        ,T_T2
+
+        ,C_T2_R0_C0
+        ,C_T2_R0_C1
+        ,C_T2_R0_C2
+        ,C_T2_R0_C3
+        ,C_T2_R0_C4
+        ,C_T2_R0_C5
+        ,C_T2_R0_C6
+        ,C_T2_R0_C7
+        ,C_T2_R0_C8
+        ,C_T2_R0_C9
+        ,C_T2_R0_C10
+
+        ,C_T2_R1_C0
+        ,C_T2_R1_C1
+        ,C_T2_R1_C2
+        ,C_T2_R1_C3
+        ,C_T2_R1_C4
+        ,C_T2_R1_C5
+        ,C_T2_R1_C6
+        ,C_T2_R1_C7
+        ,C_T2_R1_C8
+        ,C_T2_R1_C9
+        ,C_T2_R1_C10
+
+        ,C_T2_R2_C0
+        ,C_T2_R2_C1
+        ,C_T2_R2_C2
+        ,C_T2_R2_C3
+        ,C_T2_R2_C4
+        ,C_T2_R2_C5
+        ,C_T2_R2_C6
+        ,C_T2_R2_C7
+        ,C_T2_R2_C8
+        ,C_T2_R2_C9
+        ,C_T2_R2_C10
+
+        ,C_T2_R3_C0
+        ,C_T2_R3_C1
+        ,C_T2_R3_C2
+        ,C_T2_R3_C3
+        ,C_T2_R3_C4
+        ,C_T2_R3_C5
+        ,C_T2_R3_C6
+        ,C_T2_R3_C7
+        ,C_T2_R3_C8
+        ,C_T2_R3_C9
+        ,C_T2_R3_C10
+
+        ,C_T2_R4_C0
+        ,C_T2_R4_C1
+        ,C_T2_R4_C2
+        ,C_T2_R4_C3
+        ,C_T2_R4_C4
+        ,C_T2_R4_C5
+        ,C_T2_R4_C6
+        ,C_T2_R4_C7
+        ,C_T2_R4_C8
+        ,C_T2_R4_C9
+        ,C_T2_R4_C10
+
+        ,C_T2_R5_C0
+        ,C_T2_R5_C1
+        ,C_T2_R5_C2
+        ,C_T2_R5_C3
+        ,C_T2_R5_C4
+        ,C_T2_R5_C5
+        ,C_T2_R5_C6
+        ,C_T2_R5_C7
+        ,C_T2_R5_C8
+        ,C_T2_R5_C9
+        ,C_T2_R5_C10
+
+        ,C_T2_R6_C0
+        ,C_T2_R6_C1
+        ,C_T2_R6_C2
+        ,C_T2_R6_C3
+        ,C_T2_R6_C4
+        ,C_T2_R6_C5
+        ,C_T2_R6_C6
+        ,C_T2_R6_C7
+        ,C_T2_R6_C8
+        ,C_T2_R6_C9
+        ,C_T2_R6_C10
+
+        ,D_D1
+        ,D_D2
+        ,D_D3
+
+        ,T_T3
+
+        ,C_T3_R0_C0
+        ,C_T3_R0_C1
+        ,C_T3_R0_C2
+
+        ,C_T3_R1_C0
+        ,C_T3_R1_C1
+        ,C_T3_R1_C2
+
+        ,C_T3_R2_C0
+        ,C_T3_R2_C1
+        ,C_T3_R2_C2
+
+        ,C_T3_R3_C0
+        ,C_T3_R3_C1
+        ,C_T3_R3_C2
+
+        ,C_T3_R4_C0
+        ,C_T3_R4_C1
+        ,C_T3_R4_C2
+}
+
+export {
+        Export_Obj_1
+}
 
 console.log("Module js_12.js | Execution Terminate");
 
