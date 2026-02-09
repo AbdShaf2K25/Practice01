@@ -112,6 +112,9 @@ class Cell {
 //*/
         ;document.getElementById(this.id).innerHTML = this.data
         ;document.getElementById(this.id).setAttribute("class","C_T1_main_sel_1")
+        // Move all of this into the App class (in "js_14.js").
+        // 
+
 //        ;document.getElementById(this.cell_id).style.borderColor = "rgba(255, 255, 000, 1.000)"
 /*
         ;let str_console =
@@ -178,12 +181,7 @@ class Cell {
         ;
     }
 }
-/*
-    cell_type
-"cell_main_1"
-"cell_control_navigation"
-"cell_control_number"
-*/
+
 
 
 export {

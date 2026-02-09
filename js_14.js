@@ -74,7 +74,27 @@ class App {
     }
     F_log_text(text_new="|#"){
         ;let str_console =
-                "ID: ["
+                "[Prev] ID: ["
+            +   this.cell_prev_1_id
+            +   "] Tbl: ["
+            +   this.cell_prev_1_table
+            +   "] Row: ["
+            +   this.cell_prev_1_row
+            +   "] Col: ["
+            +   this.cell_prev_1_column
+            +   "] Attr: ["
+            +   this.cell_prev_1_attribute
+            +   "] Type: ["
+            +   this.cell_prev_1_type
+            +   "] CSS: ["
+            +   this.cell_prev_1_css_class
+            +   "] Data: ["
+            +   this.cell_prev_1_data
+            +   "] C_Obj: ["
+            +   this.cell_prev_1_obj
+            +   "] Cnt: ["
+            +   this.cell_prev_1_count
+            +   "]\n[Sel ] ID: ["
             +   this.cell_sel_1_id
             +   "] Tbl: ["
             +   this.cell_sel_1_table
