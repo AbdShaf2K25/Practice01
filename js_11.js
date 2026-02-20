@@ -82,6 +82,7 @@ class Cell {
         ;js_15.App_1.F_update_selected_cell.bind(this)
         ;js_15.App_1.F_alert_date.bind(this)
         ;js_15.App_1.F_log_text.bind(this)
+        ;js_15.App_1.arr_cell_objs.push(this.cell_obj)
         ;
     }
     F_update_counter(val=1){
@@ -110,8 +111,8 @@ class Cell {
 //            ;console.log(str_console_T1)
         ;
 //*/
-        ;document.getElementById(this.id).innerHTML = this.data
-        ;document.getElementById(this.id).setAttribute("class","C_T1_main_sel_1")
+        //;document.getElementById(this.id).innerHTML = this.data
+        //;document.getElementById(this.id).setAttribute("class","C_T1_main_sel_1")
         // Move all of this into the App class (in "js_14.js").
         // 
 
@@ -130,6 +131,7 @@ class Cell {
         ;js_15.App_1.F_update_selected_cell(this)
         // Here add a UI update function.
         ;js_15.App_1.F_log_text()
+        // Here update the selected row and column highlight.
         ;
     }
     F_log_text(text_new="|#"){

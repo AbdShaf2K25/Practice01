@@ -68,6 +68,46 @@ js_14.App.prototype.F_console_log_all_cells = function(){
     js_12.Export_Obj_1.C_T1_R3_C3.F_update_text();
 }
 
+js_14.App.prototype.F_initlalise_internal_cell_list = function(){
+    this.cell_list = []
+    ; for(let i=0; 10; i++){
+        this.cell_list.push(js_12.Export_Obj_1[i]);
+    }
+    console.log(this.cell_list);
+    console.log("Obj Length: " + Array.from(js_12.Export_Obj_1).length);
+    console.log("i value: " + i);
+}
+
+/*
+There is a function in js_11 which calls a function in js_14.
+In either of these I will need to trigger a method defined in js_16.
+
+How do I do this?
+
+    1)
+In the 1st level monkey patch, create various lists of cells.
+Use these in the update function as needed.
+
+    2)
+In the cell constructor, update the app class directly.
+This way it doesn't have to be MK'ed in.
+
+Then I have to figure out how to trigger it upon a cell update.
+Actually, that probably wont have to be MKed in.
+
+####
+
+So, in the cell constructor call an App Object function. Enter the cell objects ids into multiple lists.
+
+Keep track of the previous and currently highlighted rows and columns.
+
+This is easier than executing a function which generates a list of cell IDs to update or not. Although this isn't
+a scalable solution. Where as the function which generates
+a list is.
+
+
+*/
+
 /*
 class App {
      selected_cell_id       = "999"

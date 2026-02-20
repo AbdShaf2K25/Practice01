@@ -22,6 +22,9 @@ class App {
     ;cell_prev_1_data        = ""
     ;cell_prev_1_obj         = ""
     ;cell_prev_1_count       = ""
+
+    ;arr_cell_objs           = []
+
     ;
     /*
     constructor(){
@@ -60,7 +63,27 @@ class App {
         ;this.cell_sel_1_data       = cell.data
         ;this.cell_sel_1_obj        = cell.cell_obj
         ;this.cell_sel_1_count      = cell.count
+
+        ;document.getElementById(cell.id).innerHTML = cell.data
+        ;document.getElementById(cell.id).setAttribute("class","C_T1_main_sel_1")
         ;
+    }
+    F_update_selected_row_col(){
+        const row_prev_1 = this.cell_prev_1_row;
+        const col_pev_1  = this.cell_prev_1_column;
+        const row_sel_1  = this.cell_sel_1_row;
+        const col_sel_1  = this.cell_sel_1_column;
+
+        // Find all cells with the r_p_1 and c_p_1.
+        // Unhighlight them.
+        // First I need to somehow iterate through all cells.
+
+        // I suppose I could have an App object array of all cell objs.
+        // The easiest way to construct this is to put it in the cell
+        // constructor.
+
+        // THis is better than MKs, arrays or exports.
+
     }
     F_alert_date(){
          let d = new Date();
